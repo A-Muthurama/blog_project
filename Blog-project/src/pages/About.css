@@ -1,0 +1,156 @@
+:root {
+  --green: #1a3d2f;
+  --green-light: #2e604a;
+  --gray-bg: #f4f5f6;
+  --white: #ffffff;
+  --gray: #555;
+}
+
+/* ---------- About Intro ---------- */
+.about-page {
+  background: var(--gray-bg);
+  padding: 60px 20px;
+}
+
+.about-intro {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-intro h1 {
+  text-align: center;
+  font-size: 32px;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.intro-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* ---------- Grid Layout ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-details p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ---------- Sidebar ---------- */
+.about-sidebar {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-sidebar img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.sidebar-contact h4 {
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.sidebar-contact p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* ---------- Sections ---------- */
+.about-details section {
+  margin-top: 30px;
+}
+
+.about-details h3 {
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.language-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border: 1px solid var(--green);
+  color: var(--green);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.edu-card {
+  background: var(--white);
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.highlights-section ul {
+  margin-left: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.collab-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.collab-grid h4 {
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.collab-grid ul {
+  margin-left: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.projects-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fff; /* ensures visibility on green background */
+}
+
+.projects-section .section-subtitle {
+  color: #dcdcdc;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-sidebar {
+    max-width: 400px;
+    margin: 30px auto 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-intro h1 {
+    font-size: 26px;
+  }
+}
