@@ -162,7 +162,7 @@ body {
 }
 
 .btn-primary {
-  background: #27ae60;
+  background: #2744ae;
   color: #fff;
   border: none;
 }
@@ -349,7 +349,7 @@ body {
 /* Featured Projects Section */
 .featured-projects {
   padding: 4rem 0;
-  background: #387a54;
+  background: linear-gradient(135deg, #2d5016 0%, #3d6b1f 100%);
 }
 
 .projects-grid {
@@ -444,16 +444,19 @@ body {
   color: #999;
   display: block;
 }
-.section-subtitle{
+.section-subtitle,.section-title, .btn-outline{
     font: bold;
     color: white;
 }
 .text-center {
   text-align: center;
-  color: #fff;
+  color: #b32828;
+  align-content: center;
+  
 }
 .btn btn-outline{
-    background-color: #b2bec3;
+    background-color: hsl(180, 6%, 97%);
+    color: #091216;
 }
 
 /* Quote Section */
