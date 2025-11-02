@@ -17,7 +17,7 @@ const Home = () => {
               Preserving nature's genetic legacy for a sustainable future
             </p>
             <div className="hero-buttons">
-              <a href="#articles" className="btn btn-primary">Read My Article</a>
+              <Link to="/articles" className="btn btn-primary">Read My Article</Link>
               <Link to="/about" className="btn btn-secondary"> About Me</Link>
             </div>
             <a href="#projects" className="link-with-arrow">

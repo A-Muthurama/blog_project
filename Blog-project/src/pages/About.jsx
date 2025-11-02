@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -107,7 +108,7 @@ const About = () => {
       <section className="highlights-section">
         <div className="container">
           <div className="section-header-left">
-            <div className="section-icon-left">⭐</div>
+            <div className="section-icon-left">💼</div>
             <h2>Professional Highlights</h2>
           </div>
 
@@ -180,11 +181,6 @@ const About = () => {
               <h3>Climate-Smart Agriculture</h3>
               <p>Developing heat-tolerant crop varieties, mutation breeding programs, and sustainable agricultural practices for challenging environmental conditions.</p>
             </div>
-
-            <div className="expertise-card-about">
-              <h3>International Project Management</h3>
-              <p>Leading multi-million dollar research initiatives, coordinating international collaborations, and managing complex biodiversity conservation programs.</p>
-            </div>
           </div>
         </div>
       </section>
@@ -199,8 +195,8 @@ const About = () => {
               and consulting projects in plant genetic resources and sustainable agriculture.
             </p>
             <div className="cta-buttons">
-              <a href="#contact" className="btn btn-primary">Contact Me</a>
-              <a href="#projects" className="btn btn-secondary">View Projects</a>
+             <Link to="/contact" className="nav-link">Contact</Link>
+             <Link to="/project" className="nav-link">Project</Link>
             </div>
           </div>
         </div>

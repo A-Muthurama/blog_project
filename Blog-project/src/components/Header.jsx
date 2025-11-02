@@ -9,7 +9,7 @@ export const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header-content">
-          <div className="logo">ElSayed</div>
+          <div className="logo">Elsayed</div>
 
           <button
             className="menu-toggle"
