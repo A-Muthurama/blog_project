@@ -7,6 +7,11 @@ import './pages/Home.css';
 import './pages/About.css';
 import Contact from './pages/Contact';
 import './pages/Contact.css';
+import Projects from './pages/projects';
+import './pages/projects.css';
+import Publications from './pages/publications';
+import './pages/publications.css';
+
 
 function App() {
   return (
@@ -18,6 +23,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/publications" element={<Publications />} />
              <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

@@ -15,12 +15,41 @@ const Contact = () => {
       [e.target.name]: e.target.value
     });
   };
+ 
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Thank you for your message! Dr. El-Azazi will get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+  const data = {
+    access_key: "73722357-d226-430d-8738-372b9b7332e7",
+    name: formData.name,
+    email: formData.email,
+    subject: formData.subject,
+    message: formData.message,
   };
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  const result = await response.json();
+
+  if (result.success) {
+    alert("Thank you for your message! Dr. El-Azazi will get back to you soon.");;
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  } else {
+    alert("Failed to send message . Please try again later.");
+  }
+};
+
 
   return (
     <div className="contact-page">

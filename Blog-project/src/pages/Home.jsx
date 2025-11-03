@@ -20,9 +20,9 @@ const Home = () => {
               <Link to="/articles" className="btn btn-primary">Read My Article</Link>
               <Link to="/about" className="btn btn-secondary"> About Me</Link>
             </div>
-            <a href="#projects" className="link-with-arrow">
+            <Link to="/projects" className="link-with-arrow">
               View Genetic Research Projects →
-            </a>
+            </Link>
           </div>
           <div className="hero-image">
             <div className="fern-container">
@@ -137,7 +137,7 @@ const Home = () => {
           </div>
           
           <div className="text-center">
-            <a href="#projects" className="btn btn-outline">View All Projects</a>
+            <Link to='/projects' className="btn btn-outline">View All Projects</Link>
           </div>
         </div>
       </section>
