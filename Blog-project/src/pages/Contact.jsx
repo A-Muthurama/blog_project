@@ -15,12 +15,41 @@ const Contact = () => {
       [e.target.name]: e.target.value
     });
   };
+ 
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Thank you for your message! Dr. El-Azazi will get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+  const data = {
+    access_key: "73722357-d226-430d-8738-372b9b7332e7",
+    name: formData.name,
+    email: formData.email,
+    subject: formData.subject,
+    message: formData.message,
   };
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  const result = await response.json();
+
+  if (result.success) {
+    alert("Thank you for your message! Dr. El-Azazi will get back to you soon.");;
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  } else {
+    alert("Failed to send message . Please try again later.");
+  }
+};
+
 
   return (
     <div className="contact-page">
@@ -28,7 +57,13 @@ const Contact = () => {
       <section className="contact-hero">
         <div className="container">
           <div className="contact-hero-content">
-            <button className="contact-tab-btn">Get in Touch</button>
+            <button
+              type="button"
+              className="contact-tab-btn"
+              onClick={() => document.getElementById('send-message')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Get in Touch
+            </button>
             <h1>Contact</h1>
             <p className="contact-subtitle">
               Get in touch for research collaboration and professional inquiries
@@ -42,7 +77,7 @@ const Contact = () => {
         <div className="container">
           <div className="contact-grid">
             {/* Contact Form Box */}
-            <div className="contact-box">
+            <div id="send-message" className="contact-box">
               <h2>Send a Message</h2>
               
               <div className="form-container">

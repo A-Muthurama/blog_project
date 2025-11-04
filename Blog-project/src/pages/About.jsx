@@ -196,7 +196,7 @@ const About = () => {
             </p>
             <div className="cta-buttons">
              <Link to="/contact" className="nav-link">Contact</Link>
-             <Link to="/project" className="nav-link">Project</Link>
+             <Link to="/projects" className="nav-link">Projects</Link>
             </div>
           </div>
         </div>
