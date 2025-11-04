@@ -90,7 +90,7 @@ const PublicationsPage = () => {
       journal: "Global Advanced Research Journal of Agricultural Science, 2017, Vol. 6(10), pp. 333-346",
       year: 2017,
       description: "Comprehensive analysis of optimal storage conditions and germination enhancement techniques for wild melon seeds in gene bank conservation.",
-      link: "http://garj.org/full-articles/effects-of-storage-conditions-storage-periods-and-dormancy-breaking-treatments-on-the-viability-and-germination-of-citrullus-colocynthis-l-schrad-seeds.pdf"
+      link: null
     },
     {
       id: 6,
@@ -130,7 +130,7 @@ const PublicationsPage = () => {
       journal: "Global Advanced Research Journal of Agricultural Science, 2015, Vol. 4(8), pp. 387-390",
       year: 2015,
       description: "Documentation of the first record of Balanites aegyptiaca in Qatar's flora, contributing to the understanding of plant biodiversity.",
-      link: "http://garj.org/garjas/8/2015/4/8/balanitesaegyptiaca-firstrecord-for-the-flora-in-qatar"
+      link: null
     },
     {
       id: 11,
@@ -146,7 +146,7 @@ const PublicationsPage = () => {
       journal: "Global Journal of Bio-Science and Biotechnology, 2013, Vol. 2(4), pp. 485-492",
       year: 2013,
       description: "Comprehensive ecological assessment of Acacia species in desert environments, informing conservation and restoration strategies.",
-      link: "http://scienceandnature.org/GJBB_Vol2(4)2013/GJBB-V2(4)2013-6.pdf"
+      link: null
     },
     {
       id: 13,
@@ -154,7 +154,7 @@ const PublicationsPage = () => {
       journal: "Journal of Biodiversity and Environmental Sciences, 2013, Vol. 3(12), pp. 230-237",
       year: 2013,
       description: "Investigation of optimal gene bank storage protocols for maintaining seed viability in important desert Acacia species.",
-      link: "http://innspub.net/wp-content/uploads/2013/12/JBES-Vol3No12-p230-237.pdf"
+      link: null
     },
     {
       id: 14,
@@ -162,7 +162,7 @@ const PublicationsPage = () => {
       journal: "International Journal of Applied Biology and Pharmaceutical Technology, 2013, Vol. 3(1), pp. 103-109",
       year: 2013,
       description: "Development of effective dormancy-breaking protocols to enhance germination rates in Acacia seeds for restoration projects.",
-      link: "http://scienceandnature.org/IJABR_Vol3(1)2013/IJABR_V3(1)21.pdf"
+      link: null
     },
     {
       id: 15,
@@ -178,7 +178,7 @@ const PublicationsPage = () => {
       journal: "Catrina (The Egyptian Society for Environmental Sciences), 2009, Vol. 4(2)",
       year: 2009,
       description: "Long-term study on seed viability maintenance under different gene bank storage conditions and durations.",
-      link: "http://www.catrinajournal.com/paper_info/id/117"
+      link: null
     }
   ];
 
@@ -254,12 +254,12 @@ const PublicationsPage = () => {
     >
       {viewType === 'list' && (
         <div className="publication-year-badge">
-          <div className="publication-year">{pub.year}</div>
+          <div className="publication-year"><CalendarIcon />{pub.year}</div>
         </div>
       )}
       <div className={viewType === 'list' ? 'publication-content' : ''}>
         {viewType === 'grid' && (
-          <div className="publication-year">{pub.year}</div>
+          <div className="publication-year"><CalendarIcon />{pub.year}</div>
         )}
         <h3 className="publication-card-title">{pub.title}</h3>
         <div className="publication-journal">

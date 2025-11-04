@@ -28,7 +28,8 @@ const ProjectsPage = () => {
       funding: "50,000,000.00 QR",
       duration: "2025 - 2030",
       organization: "Ministry of Municipality and Environment",
-      description: "Leading the establishment of Qatar's national plant gene bank to preserve and conserve plant genetic resources for future generations and food security."
+      description: "Leading the establishment of Qatar's national plant gene bank to preserve and conserve plant genetic resources for future generations and food security.",
+      image: "./assets/project_images/qatar_gene_bank.jpg"
     },
     {
       id: 2,
@@ -37,7 +38,8 @@ const ProjectsPage = () => {
       funding: "1,000,000.00 QR",
       duration: "2012 - 2017",
       organization: "Agricultural Research Department, Ministry of Municipality and Environment",
-      description: "Comprehensive survey and conservation program for wild plant species native to Qatar, establishing baseline data for biodiversity management."
+      description: "Comprehensive survey and conservation program for wild plant species native to Qatar, establishing baseline data for biodiversity management.",
+      image: "./assets/project_images/consv_wild_plants.jpeg",  
     },
     {
       id: 3,
@@ -46,7 +48,9 @@ const ProjectsPage = () => {
       funding: "119,000 €",
       duration: "Ongoing",
       organization: "IAEA (QAT5006)",
-      description: "Application of nuclear techniques and related technologies to enhance genetic diversity and improve conservation strategies for plant genetic resources."
+      description: "Application of nuclear techniques and related technologies to enhance genetic diversity and improve conservation strategies for plant genetic resources.",
+      image: "./assets/project_images/genetic.jpg",  
+      
     },
     {
       id: 4,
@@ -55,7 +59,9 @@ const ProjectsPage = () => {
       funding: "500,000.00 USD",
       duration: "3 years",
       organization: "Funded by MITSUI & CO.",
-      description: "Development and implementation of advanced technologies for greenhouse vegetable production to enhance food security in Qatar."
+      description: "Development and implementation of advanced technologies for greenhouse vegetable production to enhance food security in Qatar.",
+      image: "./assets/project_images/ai-generated-9320142_1280.jpg",  
+      
     },
     {
       id: 5,
@@ -64,7 +70,9 @@ const ProjectsPage = () => {
       funding: "697,150.00 USD",
       duration: "April 2019 - April 2023",
       organization: "NPRP11S-0129-180378",
-      description: "Research and deployment of heat-tolerant tomato varieties specifically adapted for greenhouse production in Qatar's challenging climate conditions."
+      description: "Research and deployment of heat-tolerant tomato varieties specifically adapted for greenhouse production in Qatar's challenging climate conditions.",
+      image: "./assets/project_images/tomatoes-1280859_1280.jpg",  
+      
     },
     {
       id: 6,
@@ -73,7 +81,9 @@ const ProjectsPage = () => {
       funding: "263,597.00 €",
       duration: "2020 - 2024",
       organization: "IAEA (QAT5008)",
-      description: "Optimizing soil, nutrient, water, and plant management practices for enhanced forage production under saline conditions and vegetable production in greenhouses using nuclear techniques."
+      description: "Optimizing soil, nutrient, water, and plant management practices for enhanced forage production under saline conditions and vegetable production in greenhouses using nuclear techniques.",
+      image: "./assets/project_images/broccoli-7744338_1280.jpg",  
+      
     },
     {
       id: 7,
@@ -82,7 +92,9 @@ const ProjectsPage = () => {
       funding: "2,487,200.00 €",
       duration: "Ongoing",
       organization: "IAEA Regional Project (RAS5099)",
-      description: "Regional ARASIA project focused on climate-smart agriculture, improving crop productivity, soil and irrigation management, and food safety using nuclear techniques."
+      description: "Regional ARASIA project focused on climate-smart agriculture, improving crop productivity, soil and irrigation management, and food safety using nuclear techniques.",
+      image: "./assets/project_images/ai-generated-8836927_1280.png",  
+      
     },
     {
       id: 8,
@@ -91,7 +103,9 @@ const ProjectsPage = () => {
       funding: "1,000,000.00 QR",
       duration: "Ongoing",
       organization: "Agricultural Research Department, Ministry of Municipality and Environment",
-      description: "Systematic documentation and conservation of plant genetic resources important for food security and agricultural sustainability in Qatar."
+      description: "Systematic documentation and conservation of plant genetic resources important for food security and agricultural sustainability in Qatar.",
+      image: "./assets/project_images/agriculture-2654157_1280.jpg",  
+      
     },
     {
       id: 9,
@@ -100,7 +114,9 @@ const ProjectsPage = () => {
       funding: "1,000,000.00 QR",
       duration: "2017 - 2022",
       organization: "Agricultural Research Department (Founder of Qatar Gene Bank)",
-      description: "Foundational project that established Qatar Gene Bank, focusing on comprehensive wild plant conservation and genetic resource management."
+      description: "Foundational project that established Qatar Gene Bank, focusing on comprehensive wild plant conservation and genetic resource management.",
+      image: "./assets/project_images/forest-6746433_1280.jpg",  
+      
     },
     {
       id: 10,
@@ -109,7 +125,9 @@ const ProjectsPage = () => {
       funding: "MME Funded",
       duration: "2014 - 2020",
       organization: "Ministry of Municipality and Environment",
-      description: "Conservation initiative for Prosopis cineraria (Ghaf trees), focusing on protection and rehabilitation of this culturally and ecologically important species."
+      description: "Conservation initiative for Prosopis cineraria (Ghaf trees), focusing on protection and rehabilitation of this culturally and ecologically important species.",
+      image: "./assets/project_images/tree-3173659_1280.jpg",  
+      
     },
     {
       id: 11,
@@ -118,7 +136,9 @@ const ProjectsPage = () => {
       funding: "MME Funded",
       duration: "2016",
       organization: "Ministry of Municipality and Environment",
-      description: "Comprehensive survey and impact assessment of Prosopis juliflora distribution and its ecological effects in Qatar."
+      description: "Comprehensive survey and impact assessment of Prosopis juliflora distribution and its ecological effects in Qatar.",
+      image: "./assets/project_images/dubai-2388161_1280.jpg",  
+      
     },
     {
       id: 12,
@@ -127,8 +147,8 @@ const ProjectsPage = () => {
       funding: "MME Funded",
       duration: "",
       organization: "Ministry of Municipality and Environment",
-      description: "TBD (INFO MISSING)",
-      td:""
+      description: "",
+      image: "./assets/project_images/agave-1443273_1280.jpg"
     }
     
   ];
@@ -148,6 +168,17 @@ const ProjectsPage = () => {
         <div className="projects-grid">
           {projects.map(project => (
             <div key={project.id} className="project-card">
+            {project.image && (
+            <img 
+              src={project.image} 
+              alt={project.title}
+              className="project-card-image"
+            />
+          )}
+          <div className="project-card-content">
+            {project.status && (
+              <div className="project-status-badge">{project.status}</div>
+            )}
             <div className="project-duration"><CalendarIcon />{project.duration}</div>
               <h3 className="project-card-title">{project.title}</h3>
               
@@ -164,8 +195,9 @@ const ProjectsPage = () => {
                 <div className="project-organization"><BuildingIcon />{project.organization}</div>
               </div>
 
-              <p className="project-description" style={{color: project.td == "" ? 'red':'#555' }}>{project.description}</p>
+              <p className="project-description">{project.description}</p>
             </div>
+          </div>
           ))}
         </div>
       </div>
