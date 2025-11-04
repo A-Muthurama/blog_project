@@ -11,6 +11,10 @@ import Projects from './pages/projects';
 import './pages/projects.css';
 import Publications from './pages/publications';
 import './pages/publications.css';
+import Articles from './pages/Articles';
+import './pages/Articles.css';
+import Training from './pages/Training';
+import './pages/Training.css';
 
 
 function App() {
@@ -25,7 +29,10 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/publications" element={<Publications />} />
+             <Route path="/articles" element={<Articles />} />
+             <Route path="/training" element={<Training />} />
              <Route path="/contact" element={<Contact />} />
+             
           </Routes>
         </main>
 

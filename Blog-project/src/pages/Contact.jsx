@@ -57,7 +57,13 @@ const Contact = () => {
       <section className="contact-hero">
         <div className="container">
           <div className="contact-hero-content">
-            <button className="contact-tab-btn">Get in Touch</button>
+            <button
+              type="button"
+              className="contact-tab-btn"
+              onClick={() => document.getElementById('send-message')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Get in Touch
+            </button>
             <h1>Contact</h1>
             <p className="contact-subtitle">
               Get in touch for research collaboration and professional inquiries
@@ -71,7 +77,7 @@ const Contact = () => {
         <div className="container">
           <div className="contact-grid">
             {/* Contact Form Box */}
-            <div className="contact-box">
+            <div id="send-message" className="contact-box">
               <h2>Send a Message</h2>
               
               <div className="form-container">
