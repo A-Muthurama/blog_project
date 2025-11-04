@@ -1,0 +1,197 @@
+.training-page {
+  padding: 60px 8%;
+  background-color: #f7faf8;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  color: #163b2a;
+}
+
+/* ---------- Headings ---------- */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #114832;
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1d5a3f;
+  margin-bottom: 6px;
+}
+
+.section-desc {
+  text-align: center;
+  color: #516556;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/* ---------- Section headers ---------- */
+.section-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #104531;
+  margin: 50px 0 24px;
+  border-left: 4px solid #177a57;
+  padding-left: 10px;
+}
+
+.training-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.training-card {
+  width: 100%;
+  max-width: 780px;
+  background: #ffffff;
+  border: 1px solid #dfe9e3;
+  border-left: 5px solid #177a57;
+  border-radius: 10px;
+  padding: 24px 28px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.training-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.training-card h5 {
+  font-size: 1.1rem;
+  color: #0e3f2d;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.training-card .org,
+.training-card .loc {
+  font-size: 0.95rem;
+  color: #166c4d;
+  font-weight: 500;
+}
+
+.training-card .desc {
+  font-size: 0.9rem;
+  color: #3c4a40;
+  line-height: 1.5;
+  margin-top: 6px;
+}
+
+
+/* ---------- Card content ---------- */
+.card-meta,
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tag,
+.role {
+  background-color: #e6f4ee;
+  color: #0b6046;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.year {
+  color: #5e6f64;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.training-card h5,
+.delivered-card h5 {
+  color: #0e3f2d;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 8px 0;
+}
+
+.org,
+.loc {
+  font-size: 0.9rem;
+  color: #166c4d;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.loc {
+  color: #60746b;
+  font-weight: 400;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #3c4a40;
+  line-height: 1.45;
+  margin-top: 6px;
+}
+
+/* ---------- Stats section ---------- */
+.training-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  background-color: #edf7f2;
+  border-radius: 14px;
+  margin-top: 60px;
+  padding: 28px 16px;
+}
+
+.stat {
+  text-align: center;
+  min-width: 120px;
+}
+
+.stat h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #114832;
+}
+
+.stat p {
+  font-size: 0.95rem;
+  color: #506258;
+  margin-top: 4px;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 1024px) {
+  .training-page {
+    padding: 50px 6%;
+  }
+  .training-card,
+  .delivered-card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .training-page {
+    padding: 40px 4%;
+  }
+  .training-card,
+  .delivered-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .training-stats {
+    gap: 32px;
+    padding: 24px 12px;
+  }
+}
+
