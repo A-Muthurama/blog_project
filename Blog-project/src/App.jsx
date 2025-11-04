@@ -7,14 +7,14 @@ import './pages/Home.css';
 import './pages/About.css';
 import Contact from './pages/Contact';
 import './pages/Contact.css';
-import Projects from './pages/projects';
-import './pages/projects.css';
-import Publications from './pages/publications';
-import './pages/publications.css';
 import Articles from './pages/Articles';
 import './pages/Articles.css';
 import Training from './pages/Training';
 import './pages/Training.css';
+import Projects from './pages/projects';
+import './pages/projects.css';
+import Publications from './pages/publications';
+import './pages/publications.css';
 
 
 function App() {

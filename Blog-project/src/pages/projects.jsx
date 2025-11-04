@@ -19,7 +19,7 @@ const MoneyIcon = () => (
   </svg>
 );
 
-const ProjectsPage = () => {
+const Projects = () => {
   const projects = [
     {
       id: 1,
@@ -196,13 +196,31 @@ const ProjectsPage = () => {
               </div>
 
               <p className="project-description">{project.description}</p>
+              </div>
             </div>
-          </div>
           ))}
+        </div>
+      </div>
+      <div className="stats-cards-container">
+        <div className="stat-card">
+          <h2>12+</h2>
+          <p>Projects Completed</p>
+        </div>
+        <div className="stat-card">
+          <h2>15+</h2>
+          <p>Years of Experience</p>
+        </div>
+        <div className="stat-card">
+          <h2>55M+</h2>
+          <p>QAR Funding Received</p>
+        </div>
+        <div className="stat-card">
+          <h2>100+</h2>
+          <p>Species Conserved</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default ProjectsPage;
+export default Projects;

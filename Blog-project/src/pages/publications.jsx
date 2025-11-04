@@ -46,7 +46,7 @@ const ListIcon = () => (
   </svg>
 );
 
-const PublicationsPage = () => {
+const Publications = () => {
   const [articlesView, setArticlesView] = useState('grid');
   const [booksView, setBooksView] = useState('grid');
   const [thesesView, setThesesView] = useState('grid');
@@ -428,8 +428,26 @@ const PublicationsPage = () => {
           </div>
         </section>
       </div>
+      <div className="stats-cards-container">
+        <div className="stat-card">
+          <h2>30+</h2>
+          <p>Total Publications</p>
+        </div>
+        <div className="stat-card">
+          <h2>500+</h2>
+          <p>Citations</p>
+        </div>
+        <div className="stat-card">
+          <h2>15+</h2>
+          <p>Journals</p>
+        </div>
+        <div className="stat-card">
+          <h2>H-12</h2>
+          <p>H-Index</p>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default PublicationsPage;
+export default Publications;

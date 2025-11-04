@@ -41,6 +41,7 @@ body {
   font-size: 16px;
   color: var(--gray);
   margin: 0;
+  padding-bottom: 25px;
 }
 
 .projects-grid {
@@ -162,6 +163,45 @@ body {
   min-height: 16px; /* Prevents shrinking */
   flex-shrink: 0;
 }
+
+/* === Stats Cards === */
+.stats-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  min-width: 160px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2a7a5e; /* Accent color */
+  margin: 0;
+}
+
+.stat-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 0.3rem;
+}
+
 
 /* Responsive Design */
 @media (max-width: 800px) {
