@@ -29,7 +29,7 @@ const Projects = () => {
       duration: "2025 - 2030",
       organization: "Ministry of Municipality and Environment",
       description: "Leading the establishment of Qatar's national plant gene bank to preserve and conserve plant genetic resources for future generations and food security.",
-      image: "./assets/project_images/images1.jpg"
+      image: '/project_images/images1.jpg'
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ const Projects = () => {
       duration: "2012 - 2017",
       organization: "Agricultural Research Department, Ministry of Municipality and Environment",
       description: "Comprehensive survey and conservation program for wild plant species native to Qatar, establishing baseline data for biodiversity management.",
-      image: "./assets/project_images/images2.jpeg",  
+      image: '/project_images/images2.jpeg',  
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ const Projects = () => {
       duration: "Ongoing",
       organization: "IAEA (QAT5006)",
       description: "Application of nuclear techniques and related technologies to enhance genetic diversity and improve conservation strategies for plant genetic resources.",
-      image: "./assets/project_images/images3.jpg",  
+  image: '/project_images/images3.jpg',  
       
     },
     {
@@ -60,7 +60,7 @@ const Projects = () => {
       duration: "3 years",
       organization: "Funded by MITSUI & CO.",
       description: "Development and implementation of advanced technologies for greenhouse vegetable production to enhance food security in Qatar.",
-      image: "./assets/project_images/images4.jpg",  
+  image: '/project_images/images4.jpg',  
       
     },
     {
@@ -71,7 +71,7 @@ const Projects = () => {
       duration: "April 2019 - April 2023",
       organization: "NPRP11S-0129-180378",
       description: "Research and deployment of heat-tolerant tomato varieties specifically adapted for greenhouse production in Qatar's challenging climate conditions.",
-      image: "./assets/project_images/images5.jpg",  
+  image: '/project_images/images5.jpg',  
       
     },
     {
@@ -82,7 +82,7 @@ const Projects = () => {
       duration: "2020 - 2024",
       organization: "IAEA (QAT5008)",
       description: "Optimizing soil, nutrient, water, and plant management practices for enhanced forage production under saline conditions and vegetable production in greenhouses using nuclear techniques.",
-      image: "./assets/project_images/images6.jpg",  
+  image: '/project_images/images6.jpg',  
       
     },
     {
@@ -93,7 +93,7 @@ const Projects = () => {
       duration: "Ongoing",
       organization: "IAEA Regional Project (RAS5099)",
       description: "Regional ARASIA project focused on climate-smart agriculture, improving crop productivity, soil and irrigation management, and food safety using nuclear techniques.",
-      image: "./assets/project_images/images7.png",  
+  image: '/project_images/images7.png',  
       
     },
     {
@@ -104,7 +104,7 @@ const Projects = () => {
       duration: "Ongoing",
       organization: "Agricultural Research Department, Ministry of Municipality and Environment",
       description: "Systematic documentation and conservation of plant genetic resources important for food security and agricultural sustainability in Qatar.",
-      image: "./assets/project_images/images8.jpg",  
+  image: '/project_images/images8.jpg',  
       
     },
     {
@@ -115,7 +115,7 @@ const Projects = () => {
       duration: "2017 - 2022",
       organization: "Agricultural Research Department (Founder of Qatar Gene Bank)",
       description: "Foundational project that established Qatar Gene Bank, focusing on comprehensive wild plant conservation and genetic resource management.",
-      image: "./assets/project_images/images9.jpg",  
+  image: '/project_images/images9.jpg',  
       
     },
     {
@@ -126,7 +126,7 @@ const Projects = () => {
       duration: "2014 - 2020",
       organization: "Ministry of Municipality and Environment",
       description: "Conservation initiative for Prosopis cineraria (Ghaf trees), focusing on protection and rehabilitation of this culturally and ecologically important species.",
-      image: "./assets/project_images/images10.jpg",  
+  image: '/project_images/images10.jpg',  
       
     },
     {
@@ -137,7 +137,7 @@ const Projects = () => {
       duration: "2016",
       organization: "Ministry of Municipality and Environment",
       description: "Comprehensive survey and impact assessment of Prosopis juliflora distribution and its ecological effects in Qatar.",
-      image: "./assets/project_images/images11.jpg",  
+  image: '/project_images/images11.jpg',  
       
     },
     {
@@ -148,7 +148,7 @@ const Projects = () => {
       duration: "",
       organization: "Ministry of Municipality and Environment",
       description: "",
-      image: "./assets/project_images/images12.jpg"
+      image: '/project_images/images12.jpg'
     }
     
   ];
