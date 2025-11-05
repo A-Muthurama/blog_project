@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
 import "./Home.css";
+import img1 from '../../assets/home_images/images1.jpeg';
+import img2 from '../../assets/home_images/images2.jpeg';
+import img3 from '../../assets/home_images/images3.jpeg';
 
 const Home = () => {
   return (
@@ -101,7 +104,12 @@ const Home = () => {
           <div className="projects-grid">
             <div className="project-card">
               <div className="project-badge project-badge-ongoing">Ongoing</div>
-              <div className="project-image project-img-1">
+              <div
+                className="project-image project-img-1"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url(${img1})`,
+                }}
+              >
                 <div className="project-img-placeholder"></div>
               </div>
               <div className="project-content">
@@ -113,7 +121,12 @@ const Home = () => {
             
             <div className="project-card">
               <div className="project-badge project-badge-research">Research</div>
-              <div className="project-image project-img-2">
+              <div
+                className="project-image project-img-2"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url(${img2})`,
+                }}
+              >
                 <div className="project-img-placeholder"></div>
               </div>
               <div className="project-content">
@@ -125,7 +138,12 @@ const Home = () => {
             
             <div className="project-card">
               <div className="project-badge project-badge-iaea">IAEA</div>
-              <div className="project-image project-img-3">
+              <div
+                className="project-image project-img-3"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url(${img3})`,
+                }}
+              >
                 <div className="project-img-placeholder"></div>
               </div>
               <div className="project-content">
