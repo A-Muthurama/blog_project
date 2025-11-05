@@ -102,7 +102,7 @@ const Home = () => {
             <div className="project-card">
               <div className="project-badge project-badge-ongoing">Ongoing</div>
               <div className="project-image project-img-1">
-                <div className="project-img-placeholder">🏛️</div>
+                <div className="project-img-placeholder"></div>
               </div>
               <div className="project-content">
                 <h3>Establishing Qatar Plant Gene Bank</h3>
@@ -114,7 +114,7 @@ const Home = () => {
             <div className="project-card">
               <div className="project-badge project-badge-research">Research</div>
               <div className="project-image project-img-2">
-                <div className="project-img-placeholder">🍅</div>
+                <div className="project-img-placeholder"></div>
               </div>
               <div className="project-content">
                 <h3>Development of Heat Tolerant Tomato Varieties</h3>
@@ -126,7 +126,7 @@ const Home = () => {
             <div className="project-card">
               <div className="project-badge project-badge-iaea">IAEA</div>
               <div className="project-image project-img-3">
-                <div className="project-img-placeholder">🌍</div>
+                <div className="project-img-placeholder"></div>
               </div>
               <div className="project-content">
                 <h3>Conservation of Plant Genetic Resources in Qatar</h3>

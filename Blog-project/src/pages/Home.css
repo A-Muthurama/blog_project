@@ -348,7 +348,7 @@ body {
 /* Featured Projects Section */
 .featured-projects {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #2d5016 0%, #3d6b1f 100%);
+  background: linear-gradient(135deg, #597546 0%, #9bcb7b 100%);
 }
 
 .projects-grid {
@@ -385,7 +385,7 @@ body {
 }
 
 .project-badge-ongoing {
-  background: #27ae60;
+  background: #74cb98;
 }
 
 .project-badge-research {
@@ -407,15 +407,27 @@ body {
 }
 
 .project-img-1 {
-  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+  /* card 1 image */
+  background-image: linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url('../../assets/home_images/images1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .project-img-2 {
-  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  /* card 2 image */
+  background-image: linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url('../../assets/home_images/image2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .project-img-3 {
-  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  /* card 3 image */
+  background-image: linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url('../../assets/home_images/images3.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .project-img-placeholder {
