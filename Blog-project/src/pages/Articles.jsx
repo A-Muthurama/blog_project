@@ -133,7 +133,6 @@ export default function Articles() {
 
   return (
     <div className="articles-page">
-      <h2 className="section-title">Research Output</h2>
       <h3 className="section-subtitle">Research Articles</h3>
       <p className="section-desc">
         Peer-reviewed publications and research contributions

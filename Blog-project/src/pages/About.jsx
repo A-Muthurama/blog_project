@@ -191,7 +191,7 @@ const About = () => {
           <div className="cta-content">
             <h2>Interested in Collaboration?</h2>
             <p>
-              Dr. El-Azazi welcomes opportunities for research collaboration, academic partnerships, 
+              Dr. Elsayed-Azazi welcomes opportunities for research collaboration, academic partnerships, 
               and consulting projects in plant genetic resources and sustainable agriculture.
             </p>
             <div className="cta-buttons">

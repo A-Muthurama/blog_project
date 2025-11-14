@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
 import "./Home.css";
-import img1 from '../../assets/home_images/images1.jpeg';
-import img2 from '../../assets/home_images/images2.jpeg';
-import img3 from '../../assets/home_images/images3.jpeg';
+import img1 from '/image1.jpg';
+import img2 from '/image2.png';
+import img3 from '/image3.jpg';
 
 const Home = () => {
   return (
@@ -107,7 +107,7 @@ const Home = () => {
               <div
                 className="project-image project-img-1"
                 style={{
-                  backgroundImage: `linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url(${img1})`,
+                  backgroundImage: `url(${img1})`,
                 }}
               >
                 <div className="project-img-placeholder"></div>
@@ -124,7 +124,7 @@ const Home = () => {
               <div
                 className="project-image project-img-2"
                 style={{
-                  backgroundImage: `linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url(${img2})`,
+                  backgroundImage: `url(${img2})`,
                 }}
               >
                 <div className="project-img-placeholder"></div>
@@ -141,7 +141,7 @@ const Home = () => {
               <div
                 className="project-image project-img-3"
                 style={{
-                  backgroundImage: `linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url(${img3})`,
+                  backgroundImage: `url(${img3})`,
                 }}
               >
                 <div className="project-img-placeholder"></div>

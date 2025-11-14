@@ -407,16 +407,16 @@ body {
 }
 
 .project-img-1 {
-  /* card 1 image */
-  background-image: url('../../assets/home_images/images1.jpeg');
+  /* card 1 image (public root) */
+  background-image: url('/image1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .project-img-2 {
-  /* card 2 image */
-  background-image: url('../../assets/home_images/image2.jpeg');
+  /* card 2 image (public root) */
+  background-image: url('/image2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -424,7 +424,7 @@ body {
 
 .project-img-3 {
   /* card 3 image */
-  background-image: url('../../assets/home_images/images3.jpeg');
+  background-image: url('/image3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
