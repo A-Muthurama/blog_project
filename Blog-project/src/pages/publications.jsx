@@ -170,7 +170,7 @@ const Publications = () => {
       year: 2017,
       description:
         "Comprehensive analysis of optimal storage conditions and germination enhancement techniques for wild melon seeds in gene bank conservation.",
-      link: "./public/pub_pdfs/Citrullus.pdf",
+      link: "/pub_pdfs/Citrullus.pdf",
     },
     {
       id: 6,
