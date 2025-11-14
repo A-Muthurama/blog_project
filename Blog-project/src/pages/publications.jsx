@@ -181,7 +181,7 @@ const Publications = () => {
       year: 2017,
       description:
         "Interdisciplinary approach to conserving medicinal plants in Qatar, bridging traditional knowledge with modern conservation practices.",
-      link: "./public/pub_pdfs/Conservation.pdf",
+      link: "/pub_pdfs/Conservation.pdf",
     },
     {
       id: 7,
@@ -222,7 +222,7 @@ const Publications = () => {
       year: 2015,
       description:
         "Documentation of the first record of Balanites aegyptiaca in Qatar's flora, contributing to the understanding of plant biodiversity.",
-      link: "./public/pub_pdfs/Balanites Aegyptiaca.pdf",
+      link: "/pub_pdfs/Balanites Aegyptiaca.pdf",
     },
     {
       id: 11,
@@ -243,7 +243,7 @@ const Publications = () => {
       year: 2013,
       description:
         "Comprehensive ecological assessment of Acacia species in desert environments, informing conservation and restoration strategies.",
-      link: "./public/pub_pdfs/GJBB-V242013-6.pdf",
+      link: "/pub_pdfs/GJBB-V242013-6.pdf",
     },
     {
       id: 13,
@@ -254,7 +254,7 @@ const Publications = () => {
       year: 2013,
       description:
         "Investigation of optimal gene bank storage protocols for maintaining seed viability in important desert Acacia species.",
-      link: "./public/pub_pdfs/EffectOfStorage.pdf",
+      link: "/pub_pdfs/EffectOfStorage.pdf",
     },
     {
       id: 14,
@@ -265,7 +265,7 @@ const Publications = () => {
       year: 2013,
       description:
         "Development of effective dormancy-breaking protocols to enhance germination rates in Acacia seeds for restoration projects.",
-      link: "./public/pub_pdfs/IJABR_V3121.pdf",
+      link: "/pub_pdfs/IJABR_V3121.pdf",
     },
     {
       id: 15,
@@ -286,7 +286,7 @@ const Publications = () => {
       year: 2009,
       description:
         "Long-term study on seed viability maintenance under different gene bank storage conditions and durations.",
-      link: "./public/pub_pdfs/ViabilityBalanites.pdf",
+      link: "/pub_pdfs/ViabilityBalanites.pdf",
     },
     {
       id: 17,
@@ -297,7 +297,7 @@ const Publications = () => {
       year: 2010,
       description:
         "Study on improving germination rates of Balanites aegyptiaca seeds through dormancy-breaking techniques in Egyptian desert conditions.",
-      link: "./public/pub_pdfs/EnhancingBalanites.pdf",
+      link: "/pub_pdfs/EnhancingBalanites.pdf",
     },
   ];
 
