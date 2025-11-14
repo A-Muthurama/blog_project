@@ -408,7 +408,7 @@ body {
 
 .project-img-1 {
   /* card 1 image */
-  background-image: linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url('../../assets/home_images/images1.jpeg');
+  background-image: url('../../assets/home_images/images1.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -416,7 +416,7 @@ body {
 
 .project-img-2 {
   /* card 2 image */
-  background-image: linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url('../../assets/home_images/image2.jpeg');
+  background-image: url('../../assets/home_images/image2.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -424,7 +424,7 @@ body {
 
 .project-img-3 {
   /* card 3 image */
-  background-image: linear-gradient(rgba(34,138,34,0.35), rgba(34,138,34,0.35)), url('../../assets/home_images/images3.jpeg');
+  background-image: url('../../assets/home_images/images3.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
