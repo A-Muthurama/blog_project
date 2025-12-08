@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +29,7 @@ body {
   flex: 1;
 }
 
-/* Header Styles */
+
 .header {
   background: #1a1a1a;
   color: #fff;
@@ -104,7 +104,7 @@ body {
   background: #27ae60;
 }
 
-/* Hero Section */
+
 .hero {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d3436 100%);
   color: #fff;
@@ -244,7 +244,7 @@ body {
   }
 }
 
-/* Stats Section */
+
 .stats {
   padding: 4rem 0;
   background: #f8f9fa;
@@ -407,7 +407,7 @@ body {
 }
 
 .project-img-1 {
-  /* card 1 image (public root) */
+
   background-image: url('/image1.jpg');
   background-size: cover;
   background-position: center;
@@ -415,7 +415,7 @@ body {
 }
 
 .project-img-2 {
-  /* card 2 image (public root) */
+  
   background-image: url('/image2.png');
   background-size: cover;
   background-position: center;
@@ -423,7 +423,7 @@ body {
 }
 
 .project-img-3 {
-  /* card 3 image */
+  
   background-image: url('/image3.jpg');
   background-size: cover;
   background-position: center;
@@ -478,12 +478,12 @@ body {
     font-weight: 700;
 }
 
-/* Make expertise subtitle black (override global where needed) */
+
 .expertise .section-subtitle {
   color: #000;
 }
 
-/* Quote Section */
+/* Quote Sec */
 .quote-section {
   padding: 4rem 0;
   background: linear-gradient(135deg, #ecefed 0%, #edf0ee 100%);
@@ -517,7 +517,7 @@ body {
   opacity: 0.9;
 }
 
-/* Footer Styles */
+/* Footer sty */
 .footer {
   background: #1a1a1a;
   color: #fff;
@@ -577,7 +577,7 @@ body {
   font-size: 0.875rem;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;

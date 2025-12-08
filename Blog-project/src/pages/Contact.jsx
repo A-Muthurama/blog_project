@@ -15,41 +15,44 @@ const Contact = () => {
       [e.target.name]: e.target.value
     });
   };
- 
+
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const data = {
-    access_key: "73722357-d226-430d-8738-372b9b7332e7",
-    name: formData.name,
-    email: formData.email,
-    subject: formData.subject,
-    message: formData.message,
+    const data = {
+      access_key: "73722357-d226-430d-8738-372b9b7332e7",
+      name: formData.name.trim(),
+      email: formData.email.trim(),
+      subject: formData.subject.trim(),
+      message: formData.message.trim(),
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Thank you for your message! Dr. El-Azazi will get back to you soon.");
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        alert("Failed to send message. Please try again later.");
+      }
+    } catch (error) {
+      alert("An error occurred. Please try again later.");
+    }
   };
-
-  const response = await fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
-
-  const result = await response.json();
-
-  if (result.success) {
-    alert("Thank you for your message! Dr. El-Azazi will get back to you soon.");;
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-  } else {
-    alert("Failed to send message . Please try again later.");
-  }
-};
-
 
   return (
     <div className="contact-page">
@@ -60,7 +63,9 @@ const Contact = () => {
             <button
               type="button"
               className="contact-tab-btn"
-              onClick={() => document.getElementById('send-message')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document.getElementById('send-message')?.scrollIntoView({ behavior: 'smooth' })
+              }
             >
               Get in Touch
             </button>
@@ -79,34 +84,31 @@ const Contact = () => {
             {/* Contact Form Box */}
             <div id="send-message" className="contact-box">
               <h2>Send a Message</h2>
-              
-              <div className="form-container">
+              <form onSubmit={handleSubmit} className="form-container">
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
-                    placeholder='Your name'
+                    placeholder="Your name"
                     value={formData.name}
                     onChange={handleChange}
                     required
                   />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="email">Email</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
-                    placeholder='name@gmail.com'
+                    placeholder="name@gmail.com"
                     value={formData.email}
                     onChange={handleChange}
                     required
                   />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="subject">Subject</label>
                   <input
@@ -118,7 +120,6 @@ const Contact = () => {
                     required
                   />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="message">Message</label>
                   <textarea
@@ -130,14 +131,14 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-
-                <button onClick={handleSubmit} className="btn-send-message">
+                <button type="submit" className="btn-send-message">
                   Send Message
                 </button>
-              </div>
+              </form>
             </div>
 
-            {/* Contact Information Box */}
+            {/* Contact Info Box */}
+        
             <div className="contact-box">
               <h2>Contact Information</h2>
 
@@ -167,7 +168,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Professional Links */}
+            
               <div className="professional-links-section">
                 <h3>Professional Links</h3>
                 <div className="social-links">
@@ -198,7 +199,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Collaboration Opportunities */}
+      
       <section className="collaboration-opportunities">
         <div className="container">
           <h2>Collaboration Opportunities</h2>
